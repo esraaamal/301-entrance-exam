@@ -1,10 +1,60 @@
-#showResult{
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 
+
+body{
+background-color: #eee;
+font-family: 'Roboto', sans-serif;
+position: relative;
+}
+
+
+
+.navBar{
+    position: absolute;
+width: 100%;
+height: 100px;
+background-color:#6d8adbc7 ;
+text-align: center;
+
+}
+
+.navBar p{
+    margin-top: 2%;
+    color: white;
+    font-size: 35px;
+}
+
+.hope{
+    text-transform: uppercase;
+    color: black;
+}
+#sForm{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    background-color:#dae4ff ;
+    margin:19% auto 0;
+    margin-left: 20%;
+}
+#btnSs{
+    background-color: #6d8adbc7;
     width: 100px;
-    height: 200px;
-    margin: 9% auto 0;
-    background-color: aquamarine;
-    border-radius: 50px;
+    height: 40px;
+    border: none;
     text-align: center;
+    text-transform: uppercase;
+    margin-top: 200px;
+
+}
+
+#myresult{
+
+
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    margin-top: 290px;
+    left: 60%;
+    background-color: rgb(186, 197, 197);
 }
