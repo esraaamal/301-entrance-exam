@@ -41,6 +41,11 @@ text-align: center;
     text-align: left;
     line-height:40px;
 }
+
+
+.title1{
+    text-align: center;
+}
 #btnSs{
     background-color: #6d8adbc7;
     width: 100px;
