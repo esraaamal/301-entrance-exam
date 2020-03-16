@@ -16,15 +16,21 @@ if(newArr[i] >a){
 }
 var msg =`the number of number that are greater than ${a} is:`
 return[ msg , count];
-document.getElementById('showResult').innerHTML=`${count}`;
+// document.getElementById('showResult').innerHTML=`${count}`;
 
 }
 
 greaterThan(2);
-console.log(greaterThan(2))
+console.log(greaterThan(2));
 
 
 ///solve Q2 now /////////////////////////////////////////////
+   
+
+
+
+
+
 
 
 
