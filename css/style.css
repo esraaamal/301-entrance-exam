@@ -58,3 +58,9 @@ text-align: center;
     left: 60%;
     background-color: rgb(186, 197, 197);
 }
+
+
+.styles{
+    position:absolute;
+    padding: 100px;
+}
