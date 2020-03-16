@@ -1,5 +1,12 @@
 `use strict` ;
+document.getElementById('close').addEventListener("click", function(){
 
+document.getElementById('myresult').style.display ='none';
+
+
+
+
+})
 
 function Myform(hope ,date){
     this.hope =hope ;

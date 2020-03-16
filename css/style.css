@@ -29,7 +29,14 @@ text-align: center;
     text-transform: uppercase;
     color: black;
 }
+
+#close{
+    transform: rotate(45deg);
+    color: cornsilk;
+    width: 100px;
+}
 #sForm{
+    
     position: absolute;
     width: 500px;
     height: 400px;
