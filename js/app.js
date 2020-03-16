@@ -5,7 +5,7 @@ function Myform(hope ,date){
     this.hope =hope ;
     this.date =date;
 Myform.log.push(this);
-set1();
+// set1();
 }
 
 
@@ -13,7 +13,7 @@ set1();
    var myresult=document.getElementById('myresult');
    var sForm= document.getElementById('sForm');
    Myform.log =[];
-
+console.log(Myform.log);
 
 
 
@@ -22,10 +22,16 @@ set1();
 
     myresult.textContent ="";
     for(var i=0 ;i<Myform.log.length ;i++){
-
-        var pEl =document.createElement('p');
-        myresult.appendChild(pEl);
-        pEl.textContent =`${Myform.log[i].hope}`;
+        var olEl =document.createElement('ol');
+        myresult.appendChild(olEl);
+        var liEl =document.createElement('li');
+        liEl.textContent =`${i}-${Myform.log[i].hope}`;
+        olEl.appendChild(liEl);
+        var liEl2 =document.createElement('li');
+        liEl2.textContent =`${Myform.log[i].date}`;
+        olEl.appendChild(liEl2);
+       
+        
         
     }
 
@@ -34,9 +40,14 @@ set1();
 function set1(){
     var sds=JSON.stringify(Myform.log);
 localStorage.setItem('esraa' , sds);
-renderss();
+
 }
 
+function get1(){
+    var esraa =localStorage.getItem('esraa');
+    Myform.log=JSON.parse(esraa);
+    renderss();
+}
 
 
 
@@ -48,7 +59,8 @@ renderss();
        var log=event.target ;
        var hope =log.hope.value;
        var date=log.date.value;
-       new logobject(hope,date);
+       new Myform(hope,date);
+       set1();
        renderss();
        formId.rest();
 
@@ -57,7 +69,7 @@ renderss();
 
 sForm.addEventListener('submit',submitHandle);
 
-
+get1();
 
 
 
